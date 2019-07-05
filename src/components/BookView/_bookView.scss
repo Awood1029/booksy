@@ -1,0 +1,48 @@
+.books {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: calc(100vh - 7rem);
+
+    &__header {
+        margin: 3rem;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+    }
+
+    &__list {
+        margin: 0 3rem;
+        
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-bottom: 6rem;
+    }
+
+    &__buttons {
+        text-align: center;
+        margin-bottom: 9rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__next,
+    &__next:focus {
+        color: inherit;
+        font-size: 1.6rem;
+        border: none;
+        background-color: rgba(202, 176, 229, .7);
+        width: 15rem;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        outline: none;
+    }
+
+    &__loading {
+        font-size: 4rem;
+        margin: auto;
+        font-weight: 300;
+    }
+}

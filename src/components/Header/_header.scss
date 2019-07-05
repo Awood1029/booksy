@@ -1,0 +1,106 @@
+.header {
+    background-color: var(--color-grey-light-1);
+    height: 7rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .search {
+        margin: 0 auto;
+        flex: 0 0 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__input {
+            font-family: inherit;
+            font-size: 1.4rem;
+            background-color: var(--color-grey-light-2);
+            width: 90%;
+            border: none;
+            height: 4rem;
+            border-radius: 2rem;
+            padding: 1.5rem;
+            transition: all .2s;
+            
+            &:focus,
+            &:active {
+                outline: none;
+                width: 100%;
+            }
+    
+            &::-webkit-input-placeholder {
+                font-weight: 100;
+                color: var(--color-grey-light-4);
+            }
+
+        }
+
+        &__button {
+            border: none;
+            background-color: rgba(202, 176, 229, .2);
+            height: 4rem;
+            width: 4rem;
+            border-radius: 50%;
+            margin-left: 1rem;
+            cursor: pointer;
+
+            &:focus {
+                outline: none;
+                background-color: rgba(202, 176, 229, .2);
+            }
+        }
+
+    }
+
+    .user-nav {
+        display: flex;
+        align-items: center;
+        margin-right: 4rem;
+        height: 100%;
+
+        & > *:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        &__icon-box {
+            position: relative;
+        }
+
+        &__notification {
+            font-size: 2.2rem;
+
+            &-tag {
+                font-size: .8rem;
+                width: 1.2rem;
+                height: 1.2rem;
+                border-radius: 50%;
+                background-color: orangered;
+                color: white;
+                position: absolute;
+                top: 0;
+                right: -.2rem;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &__name {
+            font-size: 1.8rem;
+            font-weight: 300;
+        }
+
+        &__user {
+            
+            &-photo {
+                height: 4rem;
+                border-radius: 100%;
+                box-shadow: 0 .5rem 1rem rgba(0,0,0,0.3);
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+// COLOR VARIABLES
+$color-primary: #CAB0E5;
+$color-primary-light: #ddddff;
+$color-primary-dark: #363AD6;
+
+
+
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+:root {
+    --color-primary: #673897;
+    --color-primary-light: #CAB0E5;
+    --color-primary-dark: #363AD6;
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+    max-height: 100vh;
+}
+
+body {
+    font-family: $font-primary;
+    color: var(--color-grey-dark-1);
+    font-weight: 300;
+    line-height: 1.6;
+    height: 100%;
+    max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
